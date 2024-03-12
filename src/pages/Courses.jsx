@@ -24,7 +24,7 @@ const Courses = ({ helmetTitle }) => {
         <Card
             sx={{
                 height: "100vh",                
-                overflowY: "scroll",
+                overflowY: "scroll",                
             }}
         >
             <Helmet>
@@ -38,8 +38,8 @@ const Courses = ({ helmetTitle }) => {
                     align="center"
                     text="نمونه کارهای من"
                 />                
-                <Grid container sx={{ mx: 3, mt: 3 }}>                   
-                    <ShowWorksExample loading={loading} />
+                <Grid container sx={{ mx: 3, mt: 3, direction: "ltr" }}>   
+                    <ShowWorksExample loading={loading} />                     
                 </Grid>
             </CardContent>
         </Card>

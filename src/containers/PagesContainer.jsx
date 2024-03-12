@@ -1,15 +1,13 @@
 import Grid from "@mui/material/Unstable_Grid2";
 
-const PagesContainer = ({children})=> {
-    return(
-        <>
-        <Grid xs={12} sm={12} md={9} lg={10} xl={10} 
-        //  sx={{backgroundColor: 'text.primary'}}
-        >
-            {children}
-        </Grid>
-        </>
-    )
-}
+const PagesContainer = ({ children }) => {
+  return (
+    <>
+      <Grid xs={12} lg={9.6}>
+        {children}
+      </Grid>
+    </>
+  );
+};
 
 export default PagesContainer;

@@ -6,7 +6,7 @@ const SidebarContainer = ({children})=> {
     const theme = useTheme();
 
     return (
-        <Grid xs={0} sm={0} md={3} lg={2} sx={{
+        <Grid xs={0} lg={2.4} sx={{
             backgroundColor: theme.palette.mode === "dark" ? grey[900] : grey[200],
             height: '100vh',
             overflowY:'auto',

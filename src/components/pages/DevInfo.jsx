@@ -26,8 +26,8 @@ const DevInfo = () => {
             <Info>نام و نام خانوادگی : محمد باباخانی</Info>
             <Info>سن : ۲۰</Info>
             <Info>شهر : کرمانشاه</Info>
-            <Info>Mamad.Ba@Chmmail.ir : آدرس ایمیل</Info>
-            <Info>شماره موبایل : ۰۹۳۵۰۰۰۰۰۰۰</Info>
+            <Info>mohammadbabakhani2003@gmail.com : آدرس ایمیل</Info>
+            <Info>شماره موبایل : ۰۹۰۱۶۲۲۶۷۴۵</Info>
         </>
     )
 }

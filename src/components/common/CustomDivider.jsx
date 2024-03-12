@@ -29,6 +29,7 @@ const CustomDivider = ({ bColor, cColor, icon, align, text }) => {
                         "&::before, &::after": {
                             borderColor: bColor,
                         },
+                        // textAlign: align
                     }}
                 >
                     <Chip

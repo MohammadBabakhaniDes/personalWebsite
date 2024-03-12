@@ -2,6 +2,12 @@
 
 export const courses = [
     {
+        title: "پروژه سهبا",
+        image: "https://static.evand.net/images/organizations/logos/original/c1aee0c9386f271074031d5461d9424b.jpg?x-oss-process=image/resize,h_250",
+        link: "https://mohammadbabakhanides.github.io/contacts-manager-app",
+        info: `پروژه سهبا برای یافتن آسیب پذیری و رفع آنها  توسط من برای شرکت آپا دانشگاه رازی زده شده است.`,
+    },
+    {
         title: "پروژه مدیریت کننده مخاطبین",
         image: "https://sourceiran.com/wp-content/uploads/C-language-source-code-management-projects-contacts-Sourceiran.com_.jpg",
         link: "https://mohammadbabakhanides.github.io/contacts-manager-app",

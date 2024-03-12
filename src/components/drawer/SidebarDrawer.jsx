@@ -8,11 +8,11 @@ const SidebarDrawer = ()=> {
 
     const {drawerOpen, setDrawerOpen } = useContext(MainContext);
     const theme = useTheme();
-    const isMdUp = useMediaQuery(theme.breakpoints.up('md'));
+    const isMdUp = useMediaQuery(theme.breakpoints.up('lg'));
 
     useEffect(()=> {
         setDrawerOpen(drawer=> isMdUp?false:drawer);
-    }, [isMdUp])
+    }, [isMdUp]);
 
     return (
         <Drawer open={drawerOpen} variant={"temporary"} onClose={() => {
@@ -21,7 +21,7 @@ const SidebarDrawer = ()=> {
             "& .MuiDrawer-paper": { width: 300 }, display: {
                 xs: "block",
                 sm: 'block',
-                md: "none"
+                lg: "none"
             }
         }}> {/* anchor behesh nemidim chon toye Grid tanzimat lazem ra dadim*/}
             {/* Drawer yek laye jadide ke css va hata xs={0} dar Grid ,... ham rush tasiri nemizare (nemitani drawer ra responsive koni albata adi nemitani ba ravesh sakht mitani.) */}

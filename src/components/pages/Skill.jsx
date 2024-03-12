@@ -20,6 +20,7 @@ const Skill = ({ name, icon, color, value }) => {
                             component="img"
                             src={icon}
                             height={20}
+                            width={23}
                         />
                     }
                     label={name}

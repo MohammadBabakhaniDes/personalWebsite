@@ -56,7 +56,7 @@ const CommentsSlider = ({theme}) => {
                             </Typography>
                             <Card
                                 sx={{
-                                    backgroundColor: theme.palette.mode === 'dark' ? '#ff4f10' : '#f7be6d',
+                                    backgroundColor: theme.palette.mode === 'dark' ? 'rgb(251, 113, 133)' : '#f7be6d',
                                     width: 1 / 2,
                                     m: "0 auto",
                                     borderRadius: 5,

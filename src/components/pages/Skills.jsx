@@ -4,11 +4,12 @@ import {Skill} from "./";
 
 
 const Skills = () => {
-    const { htmlSkill, cssSkill, jsSkill, reactSkill, nodeSkill, gitSkill } = devSkills;
+    const { htmlSkill, cssSkill, jsSkill, reactSkill, nodeSkill, gitSkill, nextSkill } = devSkills;
     const [html, setHtml] = useState(0);
     const [css, setCss] = useState(0);
     const [js, setJs] = useState(0);
     const [react, setReact] = useState(0);
+    const [next, setNext] = useState(0);
     const [node, setNode] = useState(0);
     const [git, setGit] = useState(0);
 
@@ -31,7 +32,12 @@ const Skills = () => {
 
             setReact(prev => {
                 const plus = Math.floor(Math.random() * 10);
-                return Math.min(prev + plus, 60);
+                return Math.min(prev + plus, 70);
+            });
+
+            setNext(prev => {
+                const plus = Math.floor(Math.random() * 10);
+                return Math.min(prev + plus, 30);
             });
 
             setNode(prev => {
@@ -41,7 +47,7 @@ const Skills = () => {
 
             setGit(prev => {
                 const plus = Math.floor(Math.random() * 10);
-                return Math.min(prev + plus, 20);
+                return Math.min(prev + plus, 30);
             });
         }, 100);
 
@@ -56,6 +62,7 @@ const Skills = () => {
             <Skill name={cssSkill.name} icon={cssSkill.icon} color={cssSkill.color} value={css} />
             <Skill name={jsSkill.name} icon={jsSkill.icon} color={jsSkill.color} value={js} />
             <Skill name={reactSkill.name} icon={reactSkill.icon} color={reactSkill.color} value={react} />
+            <Skill name={nextSkill.name} icon={nextSkill.icon} color={nextSkill.color} value={next} />
             <Skill name={nodeSkill.name} icon={nodeSkill.icon} color={nodeSkill.color} value={node} />
             <Skill name={gitSkill.name} icon={gitSkill.icon} color={gitSkill.color} value={git} />
         </>

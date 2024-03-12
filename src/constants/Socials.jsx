@@ -20,7 +20,7 @@ const Socials = [
     },
     {
         icon: 'GitHub',
-        href: "#",
+        href: "https://github.com/MohammadBabakhaniDes",
        comp: <GitHub sx={{color:"gray"}} />
     }
 ];

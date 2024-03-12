@@ -6,6 +6,7 @@
 // import GitIcon from "../assets/icons/git-original.svg";
 
 import { HtmlIcon, CssIcon, JsIcon, ReactIcon, NodeIcon, GitIcon } from "../assets/icons";
+import NextIcon from "../assets/icons/next-original.svg";
 
 export const devSkills = {
     htmlSkill: {
@@ -32,14 +33,20 @@ export const devSkills = {
         icon: ReactIcon,
         color: "info",
     },
-    nodeSkill: {
+    nextSkill: {
         id: 4,
+        name: "NextJS",
+        icon: NextIcon,
+        color: "info"
+    },
+    nodeSkill: {
+        id: 5,
         name: "NodeJS",
         icon: NodeIcon,
         color: "success",
     },
     gitSkill: {
-        id: 5,
+        id: 6,
         name: "Git",
         icon: GitIcon,
         color: "secondary",

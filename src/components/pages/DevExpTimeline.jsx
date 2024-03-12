@@ -28,7 +28,7 @@ const DevExpTimeline = ({loading}) => {
                             >
                                 <HomeRepairServiceRounded color="warning" />
                             </TimelineDot>
-                            {index !== 1 ? (
+                            {index !== experiences.length - 1 ? (
                                 <TimelineConnector />
                             ) : null}
                         </TimelineSeparator>

@@ -57,6 +57,12 @@ const DevEduTimeline = ({loading}) => {
                             >
                                 {item.place}
                             </Typography>
+                            <Typography
+                                variant="body2"
+                                color="text.primary"                            
+                            >
+                                {item.honor}
+                            </Typography>
                         </TimelineContent>
                     </TimelineItem>
                 </Slide>

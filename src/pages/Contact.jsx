@@ -113,7 +113,7 @@ const Contact = ({ helmetTitle }) => {
                             >
                                 👋{" "}
                                 <a
-                                    href="mailto:younes.gh@chmail.ir"
+                                    href="mailto:mohammadbabakhani2003@gmail.com"
                                     alt="email"
                                     style={{
                                         color: "tomato",

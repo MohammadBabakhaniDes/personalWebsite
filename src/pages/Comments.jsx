@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import {
-    Box,
-    Typography,
-    Avatar,
     Card,
     CardContent
 } from "@mui/material";
@@ -40,7 +37,7 @@ const Comments = ({ helmetTitle }) => {
                 overflowY: "scroll",
                 display: "flex",
                 flexDirection: "column",
-                backgroundColor: theme.palette.mode === 'dark' ? grey[800] : grey[100]
+                backgroundColor: theme.palette.mode === 'dark' ? grey[900] : grey[100]
             }}
         >
             <Helmet>
