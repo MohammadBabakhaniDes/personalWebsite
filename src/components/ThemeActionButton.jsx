@@ -56,9 +56,9 @@ const ThemeActionButton = () => {
     const { handleThemeChange } = useContext(mainContext);
 
     return (        
-        <Box sx={{display:'flex', alignItems: 'center', justifyContent:'center'}}>
+        <Box sx={{display:'flex', alignItems: 'right', justifyContent:'left', position: "absolute"}}>
             <MaterialUISwitch onChange={handleThemeChange} sx={{ m: 1 }} theme={theme} />
-            <Typography color={"text.primary"}>تم را عوض کن</Typography>
+            {/* <Typography color={"text.primary"}>تم را عوض کن</Typography> */}
         </Box>        
     );
 };

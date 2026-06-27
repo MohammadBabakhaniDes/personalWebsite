@@ -11,50 +11,49 @@ import SwipeableViews from "react-swipeable-views";
 import { About, Home, Resume, Courses, Comments, Contact } from "../pages";
 import { Helmet } from "react-helmet-async";
 import { useTheme } from "@emotion/react";
-
-
+import Navbar from "./NavbarContainer";
 
 function AppContainer() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const theme = useTheme();
   const [mode, setMode] = useState();
-  const handleThemeChange = ()=> {
-    setMode(prevmode=> prevmode === 'dark' ? 'light' : 'dark');
-  }
+  const handleThemeChange = () => {
+    setMode((prevmode) => (prevmode === "dark" ? "light" : "dark"));
+  };
 
   const [pageNumber, setPageNumber] = useState(0);
-  const handlePageNumber = (event, newValue) => { //event = chon Tabs onChange dare.
-    if (newValue >= 0 & newValue <= 5) {
-      setPageNumber(newValue);  // chera mesle ghabli faghat az setDrawerOpen estefade nashode? chon male tabs ast va agar event ra nazarim kar nemikone.
+  const handlePageNumber = (event, newValue) => {
+    //event = chon Tabs onChange dare.
+    if ((newValue >= 0) & (newValue <= 5)) {
+      setPageNumber(newValue); // chera mesle ghabli faghat az setDrawerOpen estefade nashode? chon male tabs ast va agar event ra nazarim kar nemikone.
     }
-  }
+  };
 
   const prefersDarkMode = useMediaQuery("(prefers-color-schema:dark)");
 
-  useEffect(()=> {
-    setMode(prefersDarkMode ? "dark": "light");
+  useEffect(() => {
+    setMode(prefersDarkMode ? "dark" : "light");
   }, []);
 
-
   return (
-    <MainContext.Provider value={{
-      pageNumber,
-      handlePageNumber,
-      drawerOpen,
-      setDrawerOpen,
-      handleThemeChange
-    }}>
+    <MainContext.Provider
+      value={{
+        pageNumber,
+        handlePageNumber,
+        drawerOpen,
+        setDrawerOpen,
+        handleThemeChange,
+      }}
+    >
       <MainLayout mode={mode}>
-        <SidebarContainer>
+        <SidebarContainer pageNumber={pageNumber}>
           <Sidebar />
         </SidebarContainer>
         <DrawerActionButton />
         <PagesContainer>
-          <SwipeableViews
-            index={pageNumber}
-            onChange={handlePageNumber}
-          >
+          {/* <Navbar /> */}
+          <SwipeableViews index={pageNumber} onChange={handlePageNumber}>
             <Page pageNumber={pageNumber} index={0}>
               <Helmet>
                 <title>وب سایت محمد باباخانی | صفحه اصلی</title>
@@ -75,7 +74,7 @@ function AppContainer() {
             </Page>
             <Page pageNumber={pageNumber} index={3}>
               <Helmet>
-                <title>وب سایت محمد باباخانی |  نمونه کارها</title>
+                <title>وب سایت محمد باباخانی | نمونه کارها</title>
               </Helmet>
               <Courses />
             </Page>
@@ -87,7 +86,7 @@ function AppContainer() {
             </Page>
             <Page pageNumber={pageNumber} index={5}>
               <Helmet>
-                <title>وب سایت محمد باباخانی |  ارتباط با من</title>
+                <title>وب سایت محمد باباخانی | ارتباط با من</title>
               </Helmet>
               <Contact />
             </Page>
@@ -95,7 +94,6 @@ function AppContainer() {
         </PagesContainer>
       </MainLayout>
     </MainContext.Provider>
-  )
-
+  );
 }
 export default AppContainer;

@@ -14,9 +14,9 @@ const SidebarHeader = ()=> {
     return(
         <>
             <ThemeActionButton />
-            <CustomAvatar avatar={avatar} size={180} fallback="YG" />  
+            <CustomAvatar avatar={avatar} sizeOfCircle={110} fallback="YG" />  
             <Typography variant='h6' color={"error"}>محمد باباخانی</Typography>
-            <Typography variant='caption' color={theme.palette.mode === "light" ? grey[900] : grey[200]}>طراح سایت و توسعه دهنده ری اکت</Typography>            
+            <Typography variant='caption' color={theme.palette.mode === "light" ? "#888" : grey[200]}>طراح سایت و توسعه دهنده ری اکت</Typography>            
             <SocialMediaIcons />
         </>
     )

@@ -31,8 +31,9 @@ const DevWorkCount = () => {
                                 </Typography>
                             }
                             sx={{
-                                p: 2,
-                                backgroundColor: item.color,
+                                p: "14px",
+                                backgroundColor: item.color,   
+                                border: `2px solid ${item.colorB}`,                              
                                 width: 1,
                             }}
                         />

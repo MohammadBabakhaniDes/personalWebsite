@@ -11,7 +11,7 @@ const SidebarContent = () => {
             
             <SidebarHeader />
 
-            <Divider variant="middle" sx={{ mt: 2 }} />
+            <Divider variant="middle" />
 
             <SidebarTabs />
 

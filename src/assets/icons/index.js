@@ -5,3 +5,4 @@ export { default as JsIcon } from "./javascript-original.svg";
 export { default as ReactIcon } from "./react-original.svg";
 export { default as NodeIcon } from "./nodejs-original.svg";
 export { default as GitIcon } from "./git-original.svg";
+export { default as TsIcon } from "./typescript.png";

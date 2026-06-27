@@ -5,50 +5,83 @@
 // import NodeIcon from "../assets/icons/nodejs-original.svg";
 // import GitIcon from "../assets/icons/git-original.svg";
 
-import { HtmlIcon, CssIcon, JsIcon, ReactIcon, NodeIcon, GitIcon } from "../assets/icons";
+import {
+  HtmlIcon,
+  CssIcon,
+  JsIcon,
+  ReactIcon,
+  NodeIcon,
+  GitIcon,
+  TsIcon,
+} from "../assets/icons";
 import NextIcon from "../assets/icons/next-original.svg";
+import {
+  amber,
+  blue,
+  cyan,
+  green,
+  indigo,
+  red,
+  sky,
+  teal,
+  violet,
+} from "../helpers/color";
 
 export const devSkills = {
-    htmlSkill: {
-        id: 0,
-        name: "HTML",
-        icon: HtmlIcon,
-        color: "primary",
-    },
-    cssSkill: {
-        id: 1,
-        name: "CSS",
-        icon: CssIcon,
-        color: "info",
-    },
-    jsSkill: {
-        id: 2,
-        name: "JavaScript",
-        icon: JsIcon,
-        color: "warning",
-    },
-    reactSkill: {
-        id: 3,
-        name: "React",
-        icon: ReactIcon,
-        color: "info",
-    },
-    nextSkill: {
-        id: 4,
-        name: "NextJS",
-        icon: NextIcon,
-        color: "info"
-    },
-    nodeSkill: {
-        id: 5,
-        name: "NodeJS",
-        icon: NodeIcon,
-        color: "success",
-    },
-    gitSkill: {
-        id: 6,
-        name: "Git",
-        icon: GitIcon,
-        color: "secondary",
-    },
+  htmlSkill: {
+    id: 0,
+    name: "HTML",
+    icon: HtmlIcon,
+    color: indigo,
+    darkColor: "#8B5CF6",
+    colorB: "rgba(99, 102, 241, 0.18)",
+  },
+  cssSkill: {
+    id: 1,
+    name: "CSS",
+    icon: CssIcon,
+    color: teal,
+    darkColor: "#14B8A6",
+    colorB: "rgba(20, 184, 166, 0.18)",
+  },
+  jsSkill: {
+    id: 2,
+    name: "JavaScript",
+    icon: JsIcon,
+    color: amber,
+    darkColor: "#EAB308",
+    colorB: "rgba(234, 179, 8, 0.18)",
+  },
+  tsSkill: {
+    id: 5,
+    name: "TypeScript",
+    icon: TsIcon,
+    color: sky,
+    darkColor: "#38BDF8",
+    colorB: "rgba(14, 165, 233, 0.18)",
+  },
+  reactSkill: {
+    id: 3,
+    name: "React",
+    icon: ReactIcon,
+    color: red,
+    darkColor: red,
+    colorB: "rgba(239, 68, 68, 0.18)",
+  },
+  nextSkill: {
+    id: 4,
+    name: "NextJS",
+    icon: NextIcon,
+    color: blue,
+    darkColor: blue,
+    colorB: "rgba(59, 130, 246, 0.18)",
+  },
+  gitSkill: {
+    id: 6,
+    name: "Git",
+    icon: GitIcon,
+    color: violet,
+    darkColor: violet,
+    colorB: "rgba(167, 139, 250, 0.18)",
+  },
 };

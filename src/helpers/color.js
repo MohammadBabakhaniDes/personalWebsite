@@ -1,0 +1,19 @@
+// export const abitire = "#3B82F6";
+// export const firuze = "#22D3EE";
+// export const sabz = "#22C55E";
+// export const banafsh = "#A78BFA";
+// export const zard = "#EAB308";
+// export const ghermez = "#EF4444";
+// export const khakestari = "#64748B";
+// export const abinafti = "#0EA5E9";
+
+export const blue = "#3B82F6";
+export const cyan = "#22D3EE";
+export const green = "#22C55E";
+export const violet = "#A78BFA";
+export const amber = "#EAB308";
+export const red = "#EF4444";
+export const slate = "#64748B";
+export const sky = "#0EA5E9";
+export const teal = "#14B8A6";
+export const indigo = "#6366F1";

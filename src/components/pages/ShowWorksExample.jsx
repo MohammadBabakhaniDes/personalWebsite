@@ -1,11 +1,15 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import { courses } from "../../constants/courses";
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Slide, Typography, useTheme } from "@mui/material";
+import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Slide, Typography, useTheme } from "@mui/material";
 import EllipsisText from "react-ellipsis-text";
+import { amber, cyan, violet } from "../../helpers/color";
+import { useNavigate } from "react-router-dom";
+
 
 const ShowWorksExample = ({loading}) => {
 
     const theme = useTheme();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -16,7 +20,8 @@ const ShowWorksExample = ({loading}) => {
                     sm={6}
                     md={6}
                     lg={4}
-                    sx={{ px: 2, mb: 2 }}
+                    gap={5}
+                    sx={{ mb: 7 }}
                 >
                     <Slide
                         direction="up"
@@ -29,14 +34,20 @@ const ShowWorksExample = ({loading}) => {
                     >
                         <Card
                             sx={{
-                                maxWidth: 345,
-                                backgroundColor: theme.palette.mode === 'dark' ? '#032530' : "#aedfff",
-                            }}
+                                maxWidth: {xs: 280, sm: 240, md: 320,lg: 270, xl:290},
+                                backgroundColor: theme.palette.mode === 'dark' ? '#032530' : "#F8FAFC",   
+                                border: "1px solid #E2E8F0",
+                                borderRadius: 6, 
+                                mx: 'auto'                          
+                            }}                        
                         >
-                            <CardActionArea>
+                            <CardActionArea onClick={() => {                                
+                                // window.location.assign(course.link);
+                                window.open(course.link);
+                            }}>
                                 <CardMedia
                                     component="img"
-                                    height="250"
+                                    height="250"                                    
                                     width="200"
                                     image={course.image}
                                     alt={course.title}
@@ -59,7 +70,7 @@ const ShowWorksExample = ({loading}) => {
                                     >
                                         <EllipsisText
                                             text={course.info}
-                                            length={"100"}
+                                            length={"88"}
                                         />
                                     </Typography>
                                 </CardContent>

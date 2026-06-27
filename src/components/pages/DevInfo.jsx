@@ -1,35 +1,91 @@
 import { Typography } from "@mui/material";
 import { KeyboardArrowLeftRounded } from "@mui/icons-material";
+import { blue } from "../../helpers/color";
 
 const Info = ({ children }) => {
-    return (
+  return (
+    <Typography
+      variant="body1"
+      color="text.primary"
+      textAlign="left"
+      sx={{ mt: 2 }}
+    >
+      {children}
+      <KeyboardArrowLeftRounded
+        sx={{
+          verticalAlign: "bottom",
+          color: blue,
+        }}
+      />
+    </Typography>
+  );
+};
+
+const InfoBigText = ({ children, title }) => {
+  return (
+    <>
+      <Typography
+        variant="body1"
+        color="text.primary"
+        textAlign="left"
+        sx={{ mt: 2 }}
+      >
         <Typography
-            variant="body1"
-            color="text.primary"
-            textAlign="left"
-            sx={{ mt: 2 }}
+          variant=""
+          sx={{
+            display: {
+              xs: "none",
+              sm: "inline",
+            },
+          }}
         >
-            {children}
-            <KeyboardArrowLeftRounded
-                sx={{
-                    verticalAlign: "bottom",
-                    color: "primary.main",
-                }}
-            />
+          {children}
         </Typography>
-    );
+        {title}
+        <KeyboardArrowLeftRounded
+          sx={{
+            verticalAlign: "bottom",
+            color: blue,
+          }}
+        />
+      </Typography>
+      <Typography
+        variant="body1"
+        color="text.primary"
+        textAlign="right"
+        sx={{
+          position: "relative",
+          mb: 5.5,
+          mt: 1.1,
+          display: {
+            xs: "block",
+            sm: "none",
+          },
+        }}
+      >
+        <div style={{ position: "absolute", right: -15, width: "100vw" }}>
+          {children}
+        </div>
+      </Typography>
+    </>
+  );
 };
 
 const DevInfo = () => {
-    return (
-        <>
-            <Info>نام و نام خانوادگی : محمد باباخانی</Info>
-            <Info>سن : ۲۰</Info>
-            <Info>شهر : کرمانشاه</Info>
-            <Info>mohammadbabakhani2003@gmail.com : آدرس ایمیل</Info>
-            <Info>شماره موبایل : ۰۹۰۱۶۲۲۶۷۴۵</Info>
-        </>
-    )
-}
+  return (
+    <>
+      <Info>نام و نام خانوادگی: محمد باباخانی</Info>
+      <Info>سن: ۲۳</Info>
+      <Info>شهر: تهران</Info>
+      
+      <Info>شماره موبایل: ۰۹۰۱۶۲۲۶۷۴۵</Info>
+      <InfoBigText title={" :آدرس ایمیل"}>
+        mohammadbabakhani2003@gmail.com
+      </InfoBigText>
+
+      
+    </>
+  );
+};
 
 export default DevInfo;

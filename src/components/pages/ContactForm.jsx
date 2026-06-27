@@ -27,16 +27,16 @@ const ContactForm = () => {
     email: "",
     subject: "",
     message: "",
-    recaptcha: "",
+    // recaptcha: "",
   };
   const formik = useFormik({
     initialValues: contactInputNames,
     onSubmit: (values) => {
-      toast.success(<Typography>پیام شما ارسال شد 😁</Typography>, {
+      toast.success("پیام شما ارسال شد 😁", {
         rtl: true,
         position: "bottom-right",
+        theme: "dark",
       });
-      console.log("Form Values: ", values);
       values.fullname = "";
       values.email = "";
       values.subject = "";
@@ -48,7 +48,10 @@ const ContactForm = () => {
   const theme = useTheme();
 
   return (
-    <form autoComplete="off" onSubmit={formik.handleSubmit}>
+    <form
+      autoComplete="off"
+      onSubmit={formik.handleSubmit}      
+    >
       <CardContent>
         <Grid container>
           <Grid xs={12} sx={{ direction: "ltr" }} container spacing={2}>
@@ -61,6 +64,11 @@ const ContactForm = () => {
                 label="نام و نام خانوادگی"
                 name="fullname"
                 variant="outlined"
+                sx={
+                  theme.palette.mode == "dark" && {
+                    background: "#161F32",
+                  }
+                }
                 helperText={
                   formik.touched.fullname ? formik.errors.fullname : null
                 }
@@ -86,6 +94,11 @@ const ContactForm = () => {
                 label="آدرس ایمیل"
                 name="email"
                 variant="outlined"
+                sx={
+                  theme.palette.mode == "dark" && {
+                    background: "#161F32",
+                  }
+                }
                 helperText={formik.touched.email ? formik.errors.email : null}
                 error={Boolean(formik.touched.email && formik.errors.email)}
                 value={formik.values?.email}
@@ -99,7 +112,7 @@ const ContactForm = () => {
                 }}
               />
             </Grid>
-            <Grid xs={12} md={12}>
+            <Grid xs={12} md={12} mb={2}>
               <TextField
                 fullWidth
                 size="small"
@@ -107,6 +120,11 @@ const ContactForm = () => {
                 label="عنوان"
                 name="subject"
                 variant="outlined"
+                sx={
+                  theme.palette.mode == "dark" && {
+                    background: "#161F32",
+                  }                                    
+                }
                 helperText={
                   formik.touched.subject ? formik.errors.subject : null
                 }
@@ -132,6 +150,11 @@ const ContactForm = () => {
                 label="متن پیام"
                 name="message"
                 variant="outlined"
+                sx={
+                  theme.palette.mode == "dark" && {
+                    background: "#161F32",
+                  }
+                }
                 helperText={
                   formik.touched.message ? formik.errors.message : null
                 }
@@ -150,7 +173,7 @@ const ContactForm = () => {
           flexDirection: "column",
         }}
       >
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey="6LeYEE4nAAAAAO1TgzoVeoPGKbd469JfBL_Mwd58"
           theme={theme.palette.mode}
           hl="fa"
@@ -162,13 +185,17 @@ const ContactForm = () => {
           <Typography variant="caption" color="error">
             {formik.errors.recaptcha}
           </Typography>
-        )}
+        )} */}
 
         <Button
           type="submit"
           color="success"
           variant="contained"
-          sx={{ mt: 2 }}
+          sx={{
+            mt: 2,
+            background: theme.palette.mode == "dark" && "#14B8A6",
+            color: theme.palette.mode == "dark" && "#fff",
+          }}
           fullWidth
         >
           ارسال کن

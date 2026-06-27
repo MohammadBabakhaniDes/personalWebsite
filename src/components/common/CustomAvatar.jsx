@@ -1,14 +1,15 @@
 import { Avatar } from "@mui/material";
 
-const CustomAvatar = ({ avatar, size, fallback }) => {
+const CustomAvatar = ({ avatar, sizeOfCircle, fallback, variant="circular", height, width }) => {
     return (
         <>
-            <Avatar
+            <Avatar                        
                 src={avatar}
-                variant="rounded"
+                variant={variant}
                 sx={{
-                    height: size,
-                    width: size,
+                    height: variant == "circular" ? sizeOfCircle : height,
+                    width: variant == "circular" ? sizeOfCircle : width,
+                    borderRadius: variant != "circular" ? 5 : "",
                     margin: "0 auto",
                     display: {
                         xl: "block",

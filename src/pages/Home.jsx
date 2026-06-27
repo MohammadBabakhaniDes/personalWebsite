@@ -10,13 +10,17 @@ import dayTheme from "../assets/dayTheme.jpg";
 import TextTransition, { presets } from "react-text-transition";
 import { useState } from "react";
 import { loadSlim } from "tsparticles-slim";
+import { cyan, indigo, red, slate, teal, violet } from "../helpers/color";
+import Navbar from "../containers/NavbarContainer";
 
 const Home = () => {
   const strings = [
-    " من یک توسعه دهنده ری اکت هستم",
-    "من یک دانشجو هستم",
-    "من یک فریلنسر هستم",
-    "من یک متخصص فرانت اند هستم",
+    "من محمد باباخانی هستم",
+    "یک توسعه دهنده ری اکت",
+    "عاشق کدنویسی تمیز و بهینه",
+    "دنبال یادگیری و بهبود مهارت ها",
+    "دارای تجربه همکاری در تیم های مختلف",
+    "نقاط قوتم عملکرد بالا، خلاقیت و تعهدکاری",
   ];
   const theme = useTheme();
   const [index, setIndex] = useState(0);
@@ -66,12 +70,15 @@ const Home = () => {
   const bg = theme.palette.mode === "dark" ? bg2 : dayTheme;
 
   return (
-    <>     
+    <div style={{position: 'relative', top: 0, right: 0, width: "100%", zIndex: 200}}>
+      <Navbar position="fixed" ismdUpHiddenNavbar={true} />
+      
       <Particles
         id="tsparticles"
         options={theme.palette.mode === "dark" ? links : fire}
         init={particlesInit}
-        loaded={particlesLoaded}
+        loaded={particlesLoaded}  
+        // style={{position: 'relative', zIndex: 8}}
       />
       <Box
         sx={{
@@ -83,7 +90,7 @@ const Home = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "center",                
         }}
       >
         {/*Box mesle div bayad height bedi ta backgroundImage namayesh beda.*/}
@@ -95,22 +102,36 @@ const Home = () => {
           <Typography
             ref={nameEl}
             variant="h3"
-            sx={{ color: bg === bg2 ? "tomato" : "#187bcd" }}
+            sx={{
+              color: bg === bg2 ? red : "#fff",
+              mb: 3,
+              textShadow:
+                bg === bg2
+                  ? "1px 1px 2px white, 0 0 25px white, 0 0 5px white;"
+                  : "1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;",
+            }}
           ></Typography>
           <Typography variant="h3">{"}}"}</Typography>
         </Box>
         <Typography
           // ref={infoEl}
-          variant="h4"
+          variant="h5"
           color="text.primary"
-          sx={{ textDecoration: "underline", textDecorationColor: "#1976d2" }}
+          sx={{            
+            color: '#000',
+            textShadow:
+              bg === bg2
+                ? "1px 1px 2px white, 0 0 25px white, 0 0 5px white;"
+                : `1px 1px 2px ${cyan}, 0 0 25px ${violet}, 0 0 5px ${indigo};`,
+            fontSize: 21,
+          }}
         >
           <TextTransition springConfig={presets.wobbly}>
             {strings[index % strings.length]}
           </TextTransition>
         </Typography>
-      </Box>     
-    </>
+      </Box>
+    </div>
   );
 };
 
