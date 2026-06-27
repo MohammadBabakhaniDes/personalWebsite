@@ -1,13 +1,24 @@
 {
   "files": {
     "main.css": "/personalWebsite/static/css/main.151b5227.css",
-    "main.js": "/personalWebsite/static/js/main.0d9b95a7.js",
+    "main.js": "/personalWebsite/static/js/main.9c6b7986.js",
     "static/media/map.svg": "/personalWebsite/static/media/map.0d7639e83802dec1e21368a6a2e777bb.svg",
     "static/media/bg02.jpeg": "/personalWebsite/static/media/bg02.1bea0999a2083cc20a71.jpeg",
+    "static/media/shoping.jpeg": "/personalWebsite/static/media/shoping.81eaf50945cbc91913ff.jpeg",
+    "static/media/html.jpg": "/personalWebsite/static/media/html.b4608b6e105c4782749f.jpg",
+    "static/media/faraghatB.jpg": "/personalWebsite/static/media/faraghatB.f57dd08b1c921f77615e.jpg",
+    "static/media/contactA.jpg": "/personalWebsite/static/media/contactA.753fb31928b66bdc870d.jpg",
     "static/media/dayTheme.jpg": "/personalWebsite/static/media/dayTheme.c71b10465450896b0743.jpg",
-    "static/media/mamad.jpg": "/personalWebsite/static/media/mamad.834829ac0c543a9e78bf.jpg",
+    "static/media/faraghatA.jpg": "/personalWebsite/static/media/faraghatA.ac71be62acadbaf4539f.jpg",
+    "static/media/virusA.jpg": "/personalWebsite/static/media/virusA.9733cd7638422d0a861b.jpg",
+    "static/media/mamad6.jpg": "/personalWebsite/static/media/mamad6.6df20c3aeeeda7f76e5b.jpg",
+    "static/media/taxi.jpg": "/personalWebsite/static/media/taxi.b009a2140cad770ad799.jpg",
+    "static/media/form.jpg": "/personalWebsite/static/media/form.82c0e6be733170a549bc.jpg",
+    "static/media/webA.jpg": "/personalWebsite/static/media/webA.59b87f04046d641cc2d8.jpg",
     "static/media/user.png": "/personalWebsite/static/media/user.e5117e8e0cea57c9a92f.png",
+    "static/media/usergirl.png": "/personalWebsite/static/media/usergirl.ca071e3ed1030a8ffb26.png",
     "static/media/1.jpg": "/personalWebsite/static/media/1.63244c856b53772294da.jpg",
+    "static/media/typescript.png": "/personalWebsite/static/media/typescript.01647903c8f583e9e72d.png",
     "static/media/react-original.svg": "/personalWebsite/static/media/react-original.4e0c97009b885bfa75c5412262a46f5f.svg",
     "static/media/slick.svg": "/personalWebsite/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/personalWebsite/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -16,15 +27,16 @@
     "static/media/slick.woff": "/personalWebsite/static/media/slick.295183786cd8a1389865.woff",
     "static/media/next-original.svg": "/personalWebsite/static/media/next-original.c33ed1c3fa2c5dfe2f80c3c69a012472.svg",
     "static/media/javascript-original.svg": "/personalWebsite/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
+    "static/media/mb-logo-1.svg": "/personalWebsite/static/media/mb-logo-1.f20ccb8648f164edfdaf186d0a27e91c.svg",
     "static/media/css3-original.svg": "/personalWebsite/static/media/css3-original.39769a8bd378bf410d6b381a8d88fa35.svg",
     "static/media/git-original.svg": "/personalWebsite/static/media/git-original.c08353563539c6459b353f29d8dd7bf2.svg",
     "index.html": "/personalWebsite/index.html",
     "static/media/html5-original.svg": "/personalWebsite/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.151b5227.css.map": "/personalWebsite/static/css/main.151b5227.css.map",
-    "main.0d9b95a7.js.map": "/personalWebsite/static/js/main.0d9b95a7.js.map"
+    "main.9c6b7986.js.map": "/personalWebsite/static/js/main.9c6b7986.js.map"
   },
   "entrypoints": [
     "static/css/main.151b5227.css",
-    "static/js/main.0d9b95a7.js"
+    "static/js/main.9c6b7986.js"
   ]
 }
