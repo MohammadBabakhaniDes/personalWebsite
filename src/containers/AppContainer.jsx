@@ -53,7 +53,7 @@ function AppContainer() {
         <DrawerActionButton />
         <PagesContainer>
           {/* <Navbar /> */}
-          <SwipeableViews index={pageNumber} onChange={handlePageNumber}>
+          <SwipeableViews disabled index={pageNumber} onChange={handlePageNumber}>
             <Page pageNumber={pageNumber} index={0}>
               <Helmet>
                 <title>وب سایت محمد باباخانی | صفحه اصلی</title>

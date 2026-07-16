@@ -1,33 +1,37 @@
-import { ThemeProvider } from '@mui/material/styles';
-import { HelmetProvider } from 'react-helmet-async';
-import { CacheProvider } from '@emotion/react';
-import rtlPlugin from 'stylis-plugin-rtl';
-import createCache from '@emotion/cache';
-import { prefixer } from 'stylis';
+import { ThemeProvider } from "@mui/material/styles";
+import { HelmetProvider } from "react-helmet-async";
+import { CacheProvider } from "@emotion/react";
+import rtlPlugin from "stylis-plugin-rtl";
+import createCache from "@emotion/cache";
+import { prefixer } from "stylis";
 import Grid from "@mui/material/Unstable_Grid2";
-import { darkTheme, lightTheme } from '../components/ui/theme';
+import { darkTheme, lightTheme } from "../components/ui/theme";
 
-
-const MainLayout = ({children, mode})=> {
-
+const MainLayout = ({ children, mode }) => {
   const cacheRtl = createCache({
-    key: 'muirtl',
+    key: "muirtl",
     stylisPlugins: [prefixer, rtlPlugin],
   });
 
   const theme = mode === "dark" ? darkTheme : lightTheme;
 
-  return(
+  return (
     <CacheProvider value={cacheRtl}>
       <ThemeProvider theme={theme}>
-        <HelmetProvider>          
-          <Grid container sx={{height: '100vh', background: mode == "dark" ? "#1e1e1e" : ""}}>
+        <HelmetProvider>
+          <Grid
+            container
+            sx={{
+              height: "100vh",
+              background: mode == "dark" ? "#1e1e1e" : "",
+            }}
+          >
             {children}
           </Grid>
         </HelmetProvider>
       </ThemeProvider>
     </CacheProvider>
-  )
-}
+  );
+};
 
 export default MainLayout;
