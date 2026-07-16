@@ -29,15 +29,15 @@ const CommentsSlider = ({ theme }) => {
         alignItems: "center",
 
         "& .slick-dots li button:before": {
-      color: "#475569", // رنگ نقطه‌های غیرفعال
-      fontSize: "10px",
-      opacity: 1,
-    },
+          color: "#475569", // رنگ نقطه‌های غیرفعال
+          fontSize: "10px",
+          opacity: 1,
+        },
 
-    "& .slick-dots li.slick-active button:before": {
-      color: "#2DD4BF", // رنگ نقطه فعال
-      opacity: 1,
-    },
+        "& .slick-dots li.slick-active button:before": {
+          color: "#2DD4BF", // رنگ نقطه فعال
+          opacity: 1,
+        },
       }}
     >
       <Slider {...options}>
@@ -82,8 +82,8 @@ const CommentsSlider = ({ theme }) => {
                 borderLeft: "4px solid #14B8A6",
                 width: { xs: "94%", sm: "80%", md: "70%", lg: "620px" },
                 lineHeight: 2,
-                padding: "28px",
-                fontSize: '18px',
+                padding: {xs: 0, sm: "8px", md: "12px", lg: "28px"},
+                fontSize: "18px",
                 color: theme.palette.mode === "dark" ? "#E5E7EB" : "#334155",
                 m: "0 auto",
                 borderRadius: 5,
