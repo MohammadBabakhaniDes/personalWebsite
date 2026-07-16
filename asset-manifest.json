@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personalWebsite/static/css/main.151b5227.css",
-    "main.js": "/personalWebsite/static/js/main.9c6b7986.js",
+    "main.js": "/personalWebsite/static/js/main.e0db898d.js",
     "static/media/map.svg": "/personalWebsite/static/media/map.0d7639e83802dec1e21368a6a2e777bb.svg",
     "static/media/bg02.jpeg": "/personalWebsite/static/media/bg02.1bea0999a2083cc20a71.jpeg",
     "static/media/shoping.jpeg": "/personalWebsite/static/media/shoping.81eaf50945cbc91913ff.jpeg",
@@ -14,6 +14,7 @@
     "static/media/mamad6.jpg": "/personalWebsite/static/media/mamad6.6df20c3aeeeda7f76e5b.jpg",
     "static/media/taxi.jpg": "/personalWebsite/static/media/taxi.b009a2140cad770ad799.jpg",
     "static/media/form.jpg": "/personalWebsite/static/media/form.82c0e6be733170a549bc.jpg",
+    "static/media/sticker.jpg": "/personalWebsite/static/media/sticker.ca2d50a481285d421af7.jpg",
     "static/media/webA.jpg": "/personalWebsite/static/media/webA.59b87f04046d641cc2d8.jpg",
     "static/media/user.png": "/personalWebsite/static/media/user.e5117e8e0cea57c9a92f.png",
     "static/media/usergirl.png": "/personalWebsite/static/media/usergirl.ca071e3ed1030a8ffb26.png",
@@ -33,10 +34,10 @@
     "index.html": "/personalWebsite/index.html",
     "static/media/html5-original.svg": "/personalWebsite/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.151b5227.css.map": "/personalWebsite/static/css/main.151b5227.css.map",
-    "main.9c6b7986.js.map": "/personalWebsite/static/js/main.9c6b7986.js.map"
+    "main.e0db898d.js.map": "/personalWebsite/static/js/main.e0db898d.js.map"
   },
   "entrypoints": [
     "static/css/main.151b5227.css",
-    "static/js/main.9c6b7986.js"
+    "static/js/main.e0db898d.js"
   ]
 }
