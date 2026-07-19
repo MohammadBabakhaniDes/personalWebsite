@@ -29,7 +29,7 @@ const Skills = () => {
 
       setCss((prev) => {
         const plus = Math.floor(Math.random() * 10);
-        return Math.min(prev + plus, 85);
+        return Math.min(prev + plus, 90);
       });
 
       setJs((prev) => {
@@ -39,17 +39,17 @@ const Skills = () => {
 
       setTs((prev) => {
         const plus = Math.floor(Math.random() * 10);
-        return Math.min(prev + plus, 30);
+        return Math.min(prev + plus, 44);
       });
 
       setReact((prev) => {
         const plus = Math.floor(Math.random() * 10);
-        return Math.min(prev + plus, 90);
+        return Math.min(prev + plus, 95);
       });
 
       setNext((prev) => {
         const plus = Math.floor(Math.random() * 10);
-        return Math.min(prev + plus, 50);
+        return Math.min(prev + plus, 70);
       });      
 
       setGit((prev) => {
